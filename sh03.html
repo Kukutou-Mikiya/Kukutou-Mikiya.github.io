@@ -5,6 +5,19 @@
       margin: auto;
     }
 
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
     header {
       border: solid 1px black;     
     }
@@ -18,31 +31,21 @@
   </head>
   <body>
     <header>
-        James Jantz
+      <div>James Jantz</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">nature</a></li>
+                <li><a href="#services">urban</a></li>
+                <li><a href="#contact">videos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <img src="image1.jpg" alt="Image 1">
-            </div>
-            <div class="col-6 col-md-3">
-                <img src="image2.jpg" alt="Image 2">
-            </div>
-            <div class="col-6 col-md-3">
-                <img src="image3.jpg" alt="Image 3">
-            </div>
-            <div class="col-6 col-md-3">
-                <img src="image4.jpg" alt="Image 4">
-            </div>
-        </div>
+    <div class="grid-container">
+      <img src="pics/03_geko.jpg" class="grid-item">
+      <img src="pics/03_geko.jpg" class="grid-item">
+      <img src="pics/03_geko.jpg" class="grid-item">
+      <img src="pics/03_geko.jpg" class="grid-item">
     </div>
     
     <footer>
